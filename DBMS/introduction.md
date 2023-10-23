@@ -12,7 +12,7 @@
   >
   > A number 28.
   >
-  > What does it mean by 28 (age, height, distance, day, likes)
+  > What does it mean by 28 (age, height, distance, day, likes, marks)
 
 ### Types of data
 
@@ -55,3 +55,42 @@
 | 5. Data can be easily structured as the following: 1.Tabular data 2.Graph 3.Data tree | 5. Information can also be structured as the following: 1. Language 2. Ideas 3. Thoughts |
 | 6. Data does not directly helps in decision making.                                   | 6. Information directly helps in decision making.                                        |
 | 7. Example of data is student test score.                                             | 7. Example of information is average score of class that is derived from given data.     |
+
+## What is Database?
+
+- A database is a collection of data that is organized, which is also called structured data. It can be accessed or stored in a computer system.
+- The data in common databases is modelled in tables, making querying and processing efficient.
+- Structured query language (SQL) is commonly used for data querying and writing.
+
+### Relational Database:
+
+- A relational database is made up of a set of tables with data that fits into a predefined category.
+
+### Distributed Database:
+
+- A distributed database is a database in which portions of the database are stored in multiple physical locations, and in which processing is dispersed or replicated among different points in a network.
+
+### Cloud Database:
+
+- A cloud database is a database that typically runs on a cloud computing platform. Database service provides access to the database. Database services make the underlying software stack transparent to the user.
+
+## What is DBMS?
+
+- A database-management system (DBMS) is a collection of interrelated data and a set of programs to access those data.
+- The collection of data, usually referred to as the database, contains information relevant to an enterprise.
+- The primary goal of a DBMS is to provide a way to store and retrieve database information that is both convenient and efficient.
+- A DBMS is the database itself, along with all the software and functionality. It is used to perform different operations, like addition, access, updating, and deletion of the data.
+
+## DBMS vs File Systems
+
+File-processing systems has major disadvantages.
+
+    - Data Redundancy and inconsistency
+    - Difficulty in accessing data
+    - Data isolation
+    - Integrity problems
+    - Atomicity problems
+    - Concurrent-access anomalies
+    - Security problems
+
+Above 7 are also the Advantages of DBMS (answer to “Why to use DBMS?”)
