@@ -43,3 +43,15 @@
   - Accuracy − Information should be accurate.
 
   - Completeness − Information should be complete.
+
+## Data vs Information
+
+| Data                                                                                  | Information                                                                              |
+| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1. Data are the variables that help to develop ideas/conclusions.                     | 1. Information is meaningful data.                                                       |
+| 2. Data are text and numerical values.                                                | 2. Information is refined form of actual data.                                           |
+| 3. Data doesn’t rely on Information.                                                  | 3. While Information relies on Data.                                                     |
+| 4. Bits and Bytes are the measuring unit of data.                                     | 4. Information is measured in meaningful units like time, quantity, etc.                 |
+| 5. Data can be easily structured as the following: 1.Tabular data 2.Graph 3.Data tree | 5. Information can also be structured as the following: 1. Language 2. Ideas 3. Thoughts |
+| 6. Data does not directly helps in decision making.                                   | 6. Information directly helps in decision making.                                        |
+| 7. Example of data is student test score.                                             | 7. Example of information is average score of class that is derived from given data.     |
