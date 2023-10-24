@@ -5,6 +5,15 @@
   - [Internal level / Physical level](#internal-level--physical-level)
   - [Logical level / Conceptual level](#logical-level--conceptual-level)
   - [View level / External level](#view-level--external-level)
+- [Instances and Schemas](#instances-and-schemas)
+- [Data Models](#data-models)
+- [Database Languages](#database-languages)
+- [What is ORM (Object Relational Mapping)](#what-is-orm-object-relational-mapping)
+- [How is Database accessed from Application programs?](#how-is-database-accessed-from-application-programs)
+- [DBMS Application Architectures](#dbms-application-architectures)
+  - [T1 Architecture](#t1-architecture)
+  - [T2 Architecture](#t2-architecture)
+  - [T3 Architecture](#t3-architecture)
 
 Before moving into DBMS architecture let's understand some basic terminologies.
 
@@ -49,3 +58,82 @@ Let's start with DBMS architecture
 - The subschema is used to describe the different view of the database.
 - At views also provide a security mechanism to prevent users from accessing certain parts of DB.
 - For Example, FACULTY of a university is interested in looking course details of students, STUDENTS are interested in looking at all details related to academics, accounts, courses and hostel details as well
+
+## Instances and Schemas
+
+- The collection of information stored in the DB at a particular moment is called an instance of DB.
+- A schema refers to the logical structure that defines how data is organized and how relationships between data elements are handled (The overall design of the DB is called the DB schema).
+- Schema is structural description of data. Schema doesn’t change frequently. Data may change frequently.
+- DB schema corresponds to the variable declarations (along with type) in a program.
+- We have 3 types of Schemas: Physical, Logical, several view schemas called subschemas.
+- Logical schema is most important in terms of its effect on application programs, as programmers construct apps by using logical schema.
+- Physical data independence, physical schema change should not affect logical schema/application programs.
+
+## Data Models
+
+- Provides a way to describe the design of a DB at logical level.
+- A database model is a high-level, abstract representation of how data is organized and structured within a database system. It defines the logical design and the relationships between data elements.
+- A database schema, on the other hand, is a specific implementation of a database model. It is a blueprint that defines the structure of a database within a particular database management system (DBMS).
+- Underlying the structure of the DB is the Data Model; a collection of conceptual tools for describing data, data relationships, data semantics & consistency constraints.
+- Data models define how data is connected to each other and how they are processed and stored inside the system.
+- E.g., ER model, Relational Model, object-oriented model, object-relational data model etc.
+
+## Database Languages
+
+- Data definition language (DDL) to specify the database schema.
+- Data manipulation language (DML) to express database queries and updates.
+- Practically, both language features are present in a single DB language, e.g., SQL language.
+- DDL
+  - We specify consistency constraints, which must be checked, every time DB is updated.
+- DML
+
+  - Data manipulation involves
+
+    - Retrieval of information stored in DB.
+    - Insertion of new information into DB.
+    - Deletion of information from the DB.
+    - Updating existing information stored in DB.
+
+  - Query language, a part of DML to specify statement requesting the retrieval of information.
+
+## What is ORM (Object Relational Mapping)
+
+- ODM is a software design pattern and a set of tools and libraries that allow developers to map data between object-oriented programming languages and relational databases.
+- It bridges the gap between the object-oriented model used in application code and the relational model used in databases.
+
+## How is Database accessed from Application programs?
+
+- Apps (written in host languages, C/C++, Java) interacts with DB.
+- E.g., Banking system’s module generating payrolls access DB by executing DML statements from the host language.
+- API is provided to send DML/DDL statements to DB and retrieve the results.
+  - Open Database Connectivity (ODBC), Microsoft “C”.
+  - Java Database Connectivity (JDBC), Java.
+
+## DBMS Application Architectures
+
+- Client machine - on which remote DB users work
+- Server machines - on which DB system runs.
+
+### T1 Architecture
+
+- The client, server & DB all present on the same machine.
+
+### T2 Architecture
+
+- App is partitioned into 2-components.
+- Client machine, which invokes DB system functionality at server end through query language statements.
+- API standards like ODBC & JDBC are used to interact between client and server.
+
+### T3 Architecture
+
+- App is partitioned into 3 logical components.
+- Client machine is just a frontend and doesn’t contain any direct DB calls.
+- Client machine communicates with App server, and App server communicated with DB system to access data.
+- Business logic, what action to take at that condition is in App server itself.
+- T3 architecture are best for WWW Applications.
+
+Advantages:
+
+- Scalability due to distributed application servers.
+- Data integrity, App server acts as a middle layer between client and DB, which minimize the chances of data corruption.
+- Security, client can’t directly access DB, hence it is more secure.
