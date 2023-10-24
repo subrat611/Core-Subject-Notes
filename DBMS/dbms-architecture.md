@@ -39,8 +39,7 @@ Let's start with DBMS architecture
 - DBA, who must decide what information to keep in the DB use the logical level of abstraction.
 - Goal: ease to use.
 
-<img src="image.png" alt="how data stored in physical and logical level"></img>
-![how-data-stored-in-physical-and-logical-level](image.png)
+![how-data-stored-in-physical-and-logical-level](https://github.com/subrat611/Core-Subject-Notes/assets/77252075/3ee9ea12-f391-4e1b-a3a6-4002cf118bde)
 
 ### View level / External level
 
