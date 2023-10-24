@@ -1,3 +1,11 @@
+## Table of contents
+
+- [What is Abstraction](#what-is-abstraction)
+- [View of Data (Three Schema Architecture)](#view-of-data-three-schema-architecture)
+  - [Internal level / Physical level](#internal-level--physical-level)
+  - [Logical level / Conceptual level](#logical-level--conceptual-level)
+  - [View level / External level](#view-level--external-level)
+
 Before moving into DBMS architecture let's understand some basic terminologies.
 
 ## What is Abstraction?
@@ -23,7 +31,7 @@ Let's start with DBMS architecture
 - Talks about: Storage allocation (N-ary tree etc), Data compression & encryption etc.
 - Goal: We must define algorithms that allow efficient access to data.
 
-### Logical level / Conceptual level:
+### Logical level / Conceptual level
 
 - At conceptual level, data is represented in the form of various database tables. For Example, STUDENT database may contain STUDENT and COURSE tables which will be visible to users but users are unaware of their storage. Also referred as logical schema,
 - The conceptual schema describes the design of a database at the conceptual level, describes what data are stored in DB, and what relationships exist among those data.
@@ -31,9 +39,9 @@ Let's start with DBMS architecture
 - DBA, who must decide what information to keep in the DB use the logical level of abstraction.
 - Goal: ease to use.
 
-<img src="image.png" alt="how data stored in physical and logical level" />
+<img src="image.png" alt="how data stored in physical and logical level"></img>
 
-### View level / External level:
+### View level / External level
 
 - Highest level of abstraction aims to simplify users’ interaction with the system by providing different view to different end-user.
 - Each view schema describes the database part that a particular user group is interested and hides the remaining database from that user group.
