@@ -31,7 +31,7 @@ Let's start with DBMS architecture
 - DBA, who must decide what information to keep in the DB use the logical level of abstraction.
 - Goal: ease to use.
 
-![how data stored in physical and logical level](image.png)
+![how data stored in physical and logical level](./image.png)
 
 ### View level / External level:
 
