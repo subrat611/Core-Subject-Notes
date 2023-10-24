@@ -40,6 +40,7 @@ Let's start with DBMS architecture
 - Goal: ease to use.
 
 <img src="image.png" alt="how data stored in physical and logical level"></img>
+![how-data-stored-in-physical-and-logical-level](image.png)
 
 ### View level / External level
 
