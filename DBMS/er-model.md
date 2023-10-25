@@ -137,4 +137,4 @@
     - Partial Participation, not all entities are involved in the relationship instance.
     - Total Participation, each entity must be involved in at least one relationship instance.
     - e.g., Customer borrow loan, loan has total participation as it can’t exist without customer entity. And customer has partial participation.
-    - Weak entity has total participation constraint, but strong may not have total.
+    - Weak entity has total participation constraint, but strong may not have total, but strong entity may not have total participation.
