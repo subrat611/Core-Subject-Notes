@@ -131,7 +131,9 @@
     - Student attend course.
   - Participation Constraints
     - Aka, Minimum cardinality constraint.
-    - Types, Partial & Total Participation.
+    - Types
+      - Partial Participation.
+      - Total Participation.
     - Partial Participation, not all entities are involved in the relationship instance.
     - Total Participation, each entity must be involved in at least one relationship instance.
     - e.g., Customer borrow loan, loan has total participation as it can’t exist without customer entity. And customer has partial participation.
