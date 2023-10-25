@@ -1,7 +1,6 @@
 # Database Management System
 
-## Table of content
+## Table of contents
 
-- [Introduction]()
-- [DBMS Architecture]()
-- []()
+- [Introduction](https://github.com/subrat611/Core-Subject-Notes/blob/master/DBMS/introduction.md)
+- [DBMS Architecture](https://github.com/subrat611/Core-Subject-Notes/blob/master/DBMS/dbms-architecture.md)
